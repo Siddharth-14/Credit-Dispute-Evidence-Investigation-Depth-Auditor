@@ -1,0 +1,140 @@
+{
+  "furnisher_response_codes": {
+    "01": "Confirmed as reported - no change",
+    "02": "Verified accurate after reinvestigation",
+    "03": "Modified per consumer dispute",
+    "05": "Deleted per consumer dispute",
+    "18": "Investigation not yet completed"
+  },
+  "cases": [
+    {
+      "id": "case-01",
+      "narrative": "I never opened this credit card with Apex Bank. I checked my full credit history and this account showed up out of nowhere with a $4,200 balance. I filed a police report because someone clearly used my Social Security number without my permission.",
+      "disputed_item": "account not mine",
+      "evidence_attached": ["identity theft report", "government id"],
+      "furnisher_response_code": "18"
+    },
+    {
+      "id": "case-02",
+      "narrative": "This account isn't mine. I've lived at my current address for six years and have no record of ever applying for a loan from this company. I have no idea why it's on my report.",
+      "disputed_item": "account not mine",
+      "evidence_attached": [],
+      "furnisher_response_code": "01"
+    },
+    {
+      "id": "case-03",
+      "narrative": "I am disputing this tradeline again. Last year I disputed the same account for not being mine and the bureau said it was verified with no change, but I still have never had a relationship with this lender. I'm attaching my ID and a signed statement again.",
+      "disputed_item": "account not mine",
+      "evidence_attached": ["government id", "non-liability affidavit"],
+      "furnisher_response_code": "01",
+      "prior_dispute": { "disputed_same_item": true, "prior_outcome": "no change" }
+    },
+    {
+      "id": "case-04",
+      "narrative": "My credit report shows a 30-day late payment for March, but I have bank statements proving the payment cleared on the due date. I called the lender and they admitted their system had a processing delay on their end, not mine.",
+      "disputed_item": "late payment",
+      "evidence_attached": ["account statements", "payment records"],
+      "furnisher_response_code": "03"
+    },
+    {
+      "id": "case-05",
+      "narrative": "There's a late payment listed for February but I honestly don't remember the details and didn't keep my old statements. I think it might have been late but I'm not totally sure why it's being reported this way.",
+      "disputed_item": "late payment",
+      "evidence_attached": [],
+      "furnisher_response_code": "02"
+    },
+    {
+      "id": "case-06",
+      "narrative": "The balance on my auto loan is listed as $18,400 but my most recent statement clearly shows $14,900. I've called twice and emailed their support team with my statement attached, but the number on my credit report still hasn't been corrected.",
+      "disputed_item": "balance incorrect",
+      "evidence_attached": ["account statements", "correspondence with creditor"],
+      "furnisher_response_code": "18"
+    },
+    {
+      "id": "case-07",
+      "narrative": "My credit card balance is wrong. It says I owe more than I actually do. I haven't looked into exactly why but it just seems off compared to what I remember paying.",
+      "disputed_item": "balance incorrect",
+      "evidence_attached": [],
+      "furnisher_response_code": "02"
+    },
+    {
+      "id": "case-08",
+      "narrative": "I disputed this same incorrect balance six months ago with my bank statements attached and it came back verified with no change. The balance is still wrong today and I'm filing again with the same statements plus my payment records this time.",
+      "disputed_item": "balance incorrect",
+      "evidence_attached": ["account statements", "payment records"],
+      "furnisher_response_code": "01",
+      "prior_dispute": { "disputed_same_item": true, "prior_outcome": "no change" }
+    },
+    {
+      "id": "case-09",
+      "narrative": "I closed this credit card account myself three years ago and have the closure confirmation email from the bank. My credit report still lists it as an open account, which is affecting my credit utilization calculations.",
+      "disputed_item": "account should be closed",
+      "evidence_attached": ["closure confirmation", "zero balance statement"],
+      "furnisher_response_code": "03"
+    },
+    {
+      "id": "case-10",
+      "narrative": "I asked this lender to close my account after I paid it off, but it's still showing as open on my credit file. I don't have the original closure paperwork anymore since it's been a while.",
+      "disputed_item": "account should be closed",
+      "evidence_attached": ["zero balance statement"],
+      "furnisher_response_code": "18"
+    },
+    {
+      "id": "case-11",
+      "narrative": "Someone opened a store credit card in my name after my wallet was stolen last spring. I filed an FTC identity theft report and a police report right away, and I'm also including a copy of my driver's license and a signed affidavit.",
+      "disputed_item": "identity theft",
+      "evidence_attached": ["identity theft report", "government id", "identity theft affidavit"],
+      "furnisher_response_code": "05"
+    },
+    {
+      "id": "case-12",
+      "narrative": "I believe someone stole my identity and opened this personal loan account. I haven't gotten around to filing an official police report yet but I'm certain it isn't something I did.",
+      "disputed_item": "identity theft",
+      "evidence_attached": [],
+      "furnisher_response_code": "01"
+    },
+    {
+      "id": "case-13",
+      "narrative": "This is the second time I'm disputing this fraudulent account. I already submitted my FTC report and ID last time and it was verified as accurate anyway. I'm attaching the same identity theft report and my ID again along with a new signed affidavit.",
+      "disputed_item": "identity theft",
+      "evidence_attached": ["identity theft report", "government id", "identity theft affidavit"],
+      "furnisher_response_code": "01",
+      "prior_dispute": { "disputed_same_item": true, "prior_outcome": "no change" }
+    },
+    {
+      "id": "case-14",
+      "narrative": "I paid off and settled this collection account two years ago and I have the settlement agreement and payment confirmation from the collection agency. It's still showing an outstanding balance on my credit report, which isn't accurate.",
+      "disputed_item": "paid in full/settled",
+      "evidence_attached": ["settlement agreement", "payment receipt"],
+      "furnisher_response_code": "03"
+    },
+    {
+      "id": "case-15",
+      "narrative": "I paid off my medical collection account last year but it still shows a balance due. I remember paying it over the phone but I never got a receipt or confirmation letter.",
+      "disputed_item": "paid in full/settled",
+      "evidence_attached": [],
+      "furnisher_response_code": "02"
+    },
+    {
+      "id": "case-16",
+      "narrative": "I have two identical entries for the same personal loan on my credit report, both with the same account number ending in 4471. This is inflating my total debt and hurting my utilization ratio. I'm attaching statements showing the matching account numbers.",
+      "disputed_item": "duplicate account",
+      "evidence_attached": ["matching account statements"],
+      "furnisher_response_code": "18"
+    },
+    {
+      "id": "case-17",
+      "narrative": "It looks like this same auto loan might be listed twice on my report but I haven't compared the account numbers closely. I just noticed there seem to be two very similar entries.",
+      "disputed_item": "duplicate account",
+      "evidence_attached": [],
+      "furnisher_response_code": "01"
+    },
+    {
+      "id": "case-18",
+      "narrative": "My credit card company reported a late payment for January, but I have my bank statement and their own correspondence admitting the payment posted on time and the delay was due to a bank holiday processing issue.",
+      "disputed_item": "late payment",
+      "evidence_attached": ["account statements", "payment records", "correspondence with creditor"],
+      "furnisher_response_code": "03"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "codes": [
+    {
+      "code": "XB",
+      "meaning": "Account information disputed by consumer (FCRA)",
+      "description": "Applied when a consumer contacts the furnisher directly, or a bureau relays a consumer dispute, questioning the accuracy of specific account information (e.g. balance, payment history, status).",
+      "typical_dispute_types": ["balance incorrect", "late payment"],
+      "expected_evidence": ["account statements", "payment records", "correspondence with creditor"]
+    },
+    {
+      "code": "94",
+      "meaning": "Account information disputed by consumer, reinvestigation completed, consumer disagrees",
+      "description": "Follow-on compliance condition once a reinvestigation has closed but the consumer has renewed or maintained the dispute.",
+      "typical_dispute_types": ["balance incorrect", "late payment"],
+      "expected_evidence": ["prior dispute reference", "furnisher investigation response", "account statements"]
+    },
+    {
+      "code": "XH",
+      "meaning": "Account closed at consumer's request",
+      "description": "Reflects that the account was closed because the consumer asked for it to be closed, distinct from a lender-initiated closure.",
+      "typical_dispute_types": ["account should be closed"],
+      "expected_evidence": ["closure confirmation", "zero balance statement"]
+    },
+    {
+      "code": "IDT",
+      "meaning": "Identity theft / fraud dispute (FTC Identity Theft Report pathway, FCRA Section 605B)",
+      "description": "Consumer claims the account or activity resulted from identity theft rather than their own conduct; triggers block/removal obligations distinct from an ordinary accuracy dispute.",
+      "typical_dispute_types": ["identity theft"],
+      "expected_evidence": ["identity theft report", "government id", "identity theft affidavit"]
+    },
+    {
+      "code": "NM",
+      "meaning": "Account not associated with the consumer (mixed file / not-his-not-hers)",
+      "description": "Consumer asserts the tradeline belongs to someone else entirely, often due to a mixed credit file or lender error rather than fraud.",
+      "typical_dispute_types": ["account not mine"],
+      "expected_evidence": ["government id", "non-liability affidavit", "address history proof"]
+    },
+    {
+      "code": "DA",
+      "meaning": "Duplicate account reporting",
+      "description": "The same underlying debt or account appears to be reported more than once, inflating balances or account counts.",
+      "typical_dispute_types": ["duplicate account"],
+      "expected_evidence": ["matching account statements", "original loan agreement"]
+    },
+    {
+      "code": "PS",
+      "meaning": "Paid or settled account reported inaccurately",
+      "description": "Consumer states the account was paid in full or settled but the tradeline still reflects an outstanding balance or delinquent status.",
+      "typical_dispute_types": ["paid in full/settled"],
+      "expected_evidence": ["payoff letter", "settlement agreement", "payment receipt"]
+    },
+    {
+      "code": "XR",
+      "meaning": "Reinvestigation in progress",
+      "description": "Placeholder status while a furnisher's FCRA-mandated reinvestigation of a consumer dispute is still underway; used as a fallback when no more specific code fits.",
+      "typical_dispute_types": ["other"],
+      "expected_evidence": ["dispute submission record"]
+    }
+  ]
+}
