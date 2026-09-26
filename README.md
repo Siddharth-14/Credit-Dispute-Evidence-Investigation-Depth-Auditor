@@ -4,6 +4,8 @@ A small, transparent tool that scores how complete a consumer's credit-dispute e
 is, classifies it against the public Metro 2 dispute-code taxonomy, and shows its full
 reasoning trail instead of a black-box score.
 
+**[Try the live demo →](https://credit-dispute-evidence-investigation-depth-auditor.streamlit.app/)**
+
 ## Why
 
 On January 17, 2025, the [CFPB ordered Equifax to pay $15M](https://www.consumerfinance.gov/about-us/newsroom/cfpb-orders-equifax-to-pay-15-million-for-mishandling-consumer-disputes/)
